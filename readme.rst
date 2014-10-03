@@ -12,24 +12,29 @@ sphinx for the following projects:
 - PySerial
 - Matplotlib
 
+This is possible using sphinx documentation generation. It has a qthelp backend to generate qch (qt compressed help) files.
+This repository is merely a set of bash scripts to create the right documents.
+
+Building
+--------
+
+To build the docs, simply run:
+
+   $ ./make_docs.sh
+
+The documentation will be
+generated in the docs folder.
+
 
 Usage
 -----
 
-To build the docs, simply run make_docs.sh. The documentation will be
-generated eventually in the docs folder. The .qch files can be included
-in the qt assistant for easy browsing.
+The .qch files can be included in the qt assistant for easy browsing. Open the qt assistant
+
+1. 
 
 Download
 --------
 
-The docs are also built by drone.io:
-
-https://drone.io/bitbucket.org/windel/qthelpdocs/files
-
-
-|dronestate|_
-
-.. |dronestate| image:: https://drone.io/bitbucket.org/windel/qthelpdocs/status.png
-.. _dronestate: https://drone.io/bitbucket.org/windel/qthelpdocs
+Docs can be downloaded under releases of this github repository.
 
