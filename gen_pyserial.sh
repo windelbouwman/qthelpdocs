@@ -13,6 +13,6 @@ if [[ ! -f build/pyserial-2.7/documentation/build/qthelp/pySerial.qhp ]]; then
     tar xzf ../src/pyserial-2.7.tar.gz
 
     cd pyserial-2.7/documentation
-    sphinx-build -b qthelp . build/qthelp
+    sphinx-build -b qthelp -D html_theme=agogo . build/qthelp
     cd ../../..
 fi
