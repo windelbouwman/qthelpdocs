@@ -40,3 +40,5 @@ Download
 
 Docs can be downloaded under releases of this github repository.
 
+.. image:: https://travis-ci.org/windelbouwman/qthelpdocs.svg?branch=master
+    :target: https://travis-ci.org/windelbouwman/qthelpdocs
