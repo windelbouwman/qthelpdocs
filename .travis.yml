@@ -4,7 +4,7 @@ install:
     - sudo apt-get install qt4-dev-tools python-numpy python-scipy
     - sudo apt-get install python-sphinx python-matplotlib zip
     - sudo apt-get install python-sympy python-qt4 xvfb
-    - pip install numpydoc
+    - sudo pip install numpydoc
 script:
     - ./make_docs.sh
 #    - ./shoot.sh
