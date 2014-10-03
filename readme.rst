@@ -31,7 +31,9 @@ Usage
 
 The .qch files can be included in the qt assistant for easy browsing. Open the qt assistant
 
-1. 
+1. open the Qt Assistant
+2. Got to Edit -> preferences -> documentation tab
+3. Click add and select the .qch files you want to view.
 
 Download
 --------
