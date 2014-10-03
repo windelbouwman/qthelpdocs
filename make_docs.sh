@@ -12,12 +12,13 @@ mkdir -p docs
 
 set +e
 
-#find . -maxdepth 1 -name gen_\*.sh | while read line; do
-#    echo "Generating using file $line"
-#    $BASH $line
-#done
+find . -maxdepth 1 -name gen_\*.sh | while read line; do
+    echo "Generating using file $line"
+    $BASH $line
+done
 
-$BASH gen_python.sh
+# For test of releases
+# $BASH gen_python.sh
 
 set -e
 
