@@ -1,10 +1,15 @@
-
 install:
-    - sudo apt-get update
-    - sudo apt-get install qt4-dev-tools python-numpy python-scipy
-    - sudo apt-get install python-sphinx python-matplotlib zip
-    - sudo apt-get install python-sympy python-qt4 xvfb
-    - sudo pip install numpydoc
+- sudo apt-get update
+- sudo apt-get install qt4-dev-tools python-numpy python-scipy
+- sudo apt-get install python-sphinx python-matplotlib zip
+- sudo apt-get install python-sympy python-qt4 xvfb
+- sudo pip install numpydoc
 script:
-    - ./make_docs.sh
-#    - ./shoot.sh
+- "./make_docs.sh"
+deploy:
+  provider: releases
+  api_key:
+    secure: A1pynyS/r9I4knyamF0CqFeErqK7A0pnZjrONdzvKEs6RccqcmeN9doa9tJSUdQ1SwOHLXoK6CA4ASsugbeZMrebKixaqBs3IXqCX/iybKbl1vLc1hQVy7ODi97TDbVekWLe7n0iIdmXgUieIGr2TafAq1oiN2diFnIqcTLTKNU=
+  file: docs.zip
+  on:
+    repo: windelbouwman/qthelpdocs
