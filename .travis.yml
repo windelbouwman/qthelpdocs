@@ -12,4 +12,5 @@ deploy:
     secure: A1pynyS/r9I4knyamF0CqFeErqK7A0pnZjrONdzvKEs6RccqcmeN9doa9tJSUdQ1SwOHLXoK6CA4ASsugbeZMrebKixaqBs3IXqCX/iybKbl1vLc1hQVy7ODi97TDbVekWLe7n0iIdmXgUieIGr2TafAq1oiN2diFnIqcTLTKNU=
   file: docs.zip
   on:
-    repo: windelbouwman/qthelpdocs
+    tags: true
+    all_branches: true
