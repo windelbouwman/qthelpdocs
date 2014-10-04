@@ -4,7 +4,7 @@ install:
 - sudo apt-get install python-sphinx python-matplotlib zip
 - sudo apt-get install python-sympy python-qt4 xvfb graphviz
 - sudo apt-get install texlive-latex-recommended dvipng librsvg2-bin
-- sudo apt-get install imagemagick docbook2x
+- sudo apt-get install imagemagick docbook2x texlive-latex-extra
 - sudo pip install numpydoc
 script:
 - "./make_docs.sh"
