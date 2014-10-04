@@ -15,6 +15,7 @@ if [[ ! -f build/sympy-${VER}/doc/build/qthelp/SymPy.qhp ]]; then
     tar xzf "../src/sympy-${VER}.tar.gz"
 
     cd sympy-${VER}/doc
+    make html
     sphinx-build -b qthelp src build/qthelp
     cd ../../..
 fi
