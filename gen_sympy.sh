@@ -2,7 +2,7 @@
 
 set -e
 
-VER=0.7.5
+VER=0.7.6.1
 
 if [[ ! -f build/sympy-${VER}/doc/build/qthelp/SymPy.qhp ]]; then
     echo "Building sympy docs"
