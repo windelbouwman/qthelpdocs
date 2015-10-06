@@ -2,7 +2,7 @@
 
 set -e
 
-VER=1.7
+VER=1.8.5
 
 if [[ ! -f build/django-${VER}/docs/build/qthelp/Django.qhp ]]; then
     echo "Building django docs"
