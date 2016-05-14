@@ -12,7 +12,8 @@ sphinx for the following projects:
 - PySerial
 - Matplotlib
 
-This is possible using sphinx documentation generation. It has a qthelp backend to generate qch (qt compressed help) files.
+This is possible using sphinx documentation generation. It has a qthelp
+backend to generate qch (qt compressed help) files.
 This repository is merely a set of bash scripts to create the right documents.
 
 Building

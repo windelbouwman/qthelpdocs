@@ -2,17 +2,19 @@
 
 set -e
 
-if [[ ! -f build/Python-3.4.1/Doc/build/qthelp/Python.qhp ]]; then
+VER=3.5.1
+
+if [[ ! -f build/Python-${VER}/Doc/build/qthelp/Python.qhp ]]; then
     echo "Building python docs"
-    if [[ ! -f src/Python-3.4.1.tar.xz ]]; then
+    if [[ ! -f src/Python-${VER}.tar.xz ]]; then
         echo "Downloading python"
-        curl -o src/Python-3.4.1.tar.xz https://www.python.org/ftp/python/3.4.1/Python-3.4.1.tar.xz
+        curl -o src/Python-${VER}.tar.xz https://www.python.org/ftp/python/${VER}/Python-${VER}.tar.xz
     fi
 
     cd build
-    tar xJf ../src/Python-3.4.1.tar.xz
+    tar xJf ../src/Python-${VER}.tar.xz
 
-    cd Python-3.4.1/Doc
+    cd Python-${VER}/Doc
     sphinx-build -b qthelp . build/qthelp
     cd ../../..
 fi
