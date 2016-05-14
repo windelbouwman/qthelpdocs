@@ -1,0 +1,11 @@
+
+package:
+  name: qthelpdocs-python
+  version: 3.5.1
+
+source:
+  url: https://www.python.org/ftp/python/3.5.1/Python-3.5.1.tar.xz
+
+requirements:
+  build:
+    - sphinx
