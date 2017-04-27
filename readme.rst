@@ -11,6 +11,8 @@ sphinx for the following projects:
 - Sympy
 - PySerial
 - Matplotlib
+- Tox
+- Django
 
 This is possible using sphinx documentation generation. It has a qthelp
 backend to generate qch (qt compressed help) files.

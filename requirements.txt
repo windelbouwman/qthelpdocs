@@ -1,0 +1,8 @@
+
+numpy
+ipython
+sphinx
+matplotlib
+numpydoc
+colorspacious
+PIL

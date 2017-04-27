@@ -2,7 +2,7 @@
 
 set -e
 
-VER=3.5.1
+VER=3.6.1
 
 if [[ ! -f build/Python-${VER}/Doc/build/qthelp/Python.qhp ]]; then
     echo "Building python docs"

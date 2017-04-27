@@ -2,17 +2,21 @@
 
 set -e
 
-if [[ ! -f build/pyserial-2.7/documentation/build/qthelp/pySerial.qhp ]]; then
+VER=3.3
+PKGURL=https://github.com/pyserial/pyserial/archive/v${VER}.tar.gz
+LOCALZIP=pyserial-${VER}.tar.gz
+
+if [[ ! -f build/pyserial-${VER}/documentation/build/qthelp/pySerial.qhp ]]; then
     echo "Building pyserial docs"
-    if [[ ! -f src/pyserial-2.7.tar.gz ]]; then
+    if [[ ! -f src/${LOCALZIP} ]]; then
         echo "Downloading pyserial"
-        curl -L -o src/pyserial-2.7.tar.gz http://downloads.sourceforge.net/project/pyserial/pyserial/2.7/pyserial-2.7.tar.gz
+        curl -L -o src/${LOCALZIP} ${PKGURL}
     fi
 
     cd build
-    tar xzf ../src/pyserial-2.7.tar.gz
+    tar xzf ../src/${LOCALZIP}
 
-    cd pyserial-2.7/documentation
+    cd pyserial-${VER}/documentation
     sphinx-build -b qthelp -D html_theme=agogo . build/qthelp
     cd ../../..
 fi
